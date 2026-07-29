@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.so
+*.pyd
+*.dll
+
+# Experiment outputs and logs
+outputs/
+eval_output/
+logs/
+autodl/
+wandb/
+*.log
+*.pid
+*.tmp
+
+# Large model/data artifacts
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Keep the small FRACAL calibration statistics used by the default final config.
+!config/calibration/lvis_fracal_stats.pth
+
+# Keep the final released checkpoint. Track it with Git LFS.
+!checkpoints/
+!checkpoints/checkpoint_best_regular.pth
+
+# Datasets should be linked or downloaded outside the repo.
+data/
+dataset/
+datasets/lvis/
+datasets/coco/
+
+# Local notebooks and spreadsheets
+*.ipynb
+*.xlsx
+*.xls
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
